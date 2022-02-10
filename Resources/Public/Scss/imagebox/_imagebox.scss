@@ -1,0 +1,20 @@
+.imagebox {
+  display: flex;
+  justify-content: space-between;
+
+  &--flipped {
+    flex-direction: row-reverse;
+  }
+
+  &--content {
+    padding: 80px;
+    width: 600px;
+    height: 600px;
+    background-color: $color-light-grey;
+
+    h2 {
+      margin-top: 0;
+      font-size: 32px;
+    }
+  }
+}

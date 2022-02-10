@@ -1,0 +1,45 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+            contentteaser {
+                iconIdentifier = tx_fotografievogelmaskexport_contentteaser
+                title = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.contentteaser_title
+                description = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.contentteaser_description
+                tt_content_defValues {
+                    CType = vogelvlugsitepackage_contentteaser
+                }
+            }
+            gallery {
+                iconIdentifier = tx_fotografievogelmaskexport_gallery
+                title = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.gallery_title
+                description = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.gallery_description
+                tt_content_defValues {
+                    CType = vogelvlugsitepackage_gallery
+                }
+            }
+            headerteaser {
+                iconIdentifier = tx_fotografievogelmaskexport_headerteaser
+                title = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.headerteaser_title
+                description = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.headerteaser_description
+                tt_content_defValues {
+                    CType = vogelvlugsitepackage_headerteaser
+                }
+            }
+            heroteaser {
+                iconIdentifier = tx_fotografievogelmaskexport_heroteaser
+                title = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.heroteaser_title
+                description = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.heroteaser_description
+                tt_content_defValues {
+                    CType = vogelvlugsitepackage_heroteaser
+                }
+            }
+            imagebox {
+                iconIdentifier = tx_fotografievogelmaskexport_imagebox
+                title = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.imagebox_title
+                description = LLL:EXT:fotografie_vogel_mask_export/Resources/Private/Language/locallang_db_new_content_el.xlf:wizards.newContentElement.imagebox_description
+                tt_content_defValues {
+                    CType = vogelvlugsitepackage_imagebox
+                }
+            }
+    }
+    show := addToList(contentteaser, gallery, headerteaser, heroteaser, imagebox)
+}

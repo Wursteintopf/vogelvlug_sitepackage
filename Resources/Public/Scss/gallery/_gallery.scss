@@ -1,0 +1,16 @@
+.swiper-container {
+  max-width: $page-width;
+  margin-left: 0 !important;
+
+  img {
+    max-width: 100%;
+    height: 100%;
+  }
+}
+
+.gallery {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

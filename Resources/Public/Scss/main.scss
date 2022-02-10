@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700');
+@import url('https://use.typekit.net/qhe5pbk.css');
+
+// Variables
+@import 'variables';
+
+// Modules
+// import your modules here
+@import "base/normalize";
+@import "base/base";
+@import "base/forms";
+@import "parallax/parallax";
+@import "header/header";
+@import "heroteaser/heroteaser";
+@import "contentteaser/contentteaser";
+@import "imagebox/imagebox";
+@import "headerteaser/headerteaser";
+@import "gallery/gallery";
+@import "footer/footer";

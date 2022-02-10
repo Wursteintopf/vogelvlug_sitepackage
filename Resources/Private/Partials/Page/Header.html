@@ -1,0 +1,19 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:vv="Vogelvlug\VogelvlugSitepackage\ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="header" id="header">
+    <div class="header--content">
+        <a class="logo" href="/">{pageTitle}</a>
+        <div class="menu">
+            <f:for each="{mainnavigation}" as="mainnavigationItem">
+                <div class="menu--item {f:if(condition: mainnavigationItem.active, then:'menu--item--active')}">
+                    <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
+                        {mainnavigationItem.title}
+                    </a>
+                </div>
+            </f:for>
+        </div>
+    </div>
+</div>

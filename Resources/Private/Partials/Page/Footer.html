@@ -1,0 +1,23 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de"
+      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+      xmlns:vv="Vogelvlug\VogelvlugSitepackage\ViewHelpers"
+      data-namespace-typo3-fluid="true">
+
+<div class="legal">
+    <div class="container">
+        <div class="legal--content">
+            <div class="legal--copyright">
+                © <vv:currentYear /> {pageTitle} - Website made with <i class="fas fa-heart"></i> and <i class="fas fa-mug-hot"></i> by <a href="https://vogelvlug.de">Markus Vogel</a>
+            </div>
+
+            <div class="legal--links">
+                <f:if condition="{footerPids} !== ''">
+                    <vv:split stringToSplit="{footerPids}" as="footerLinks" />
+                    <f:for each="{footerLinks}" as="uid">
+                        <f:link.page pageUid="{uid}"><vv:pageTitle pageId="{uid}" /></f:link.page>
+                    </f:for>
+                </f:if>
+            </div>
+        </div>
+    </div>
+</div>

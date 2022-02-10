@@ -1,0 +1,44 @@
+.container {
+  width: $page-width;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "proxima-nova", sans-serif;
+}
+
+.button {
+  a {
+    border: 1px solid $color-white;
+    color: $color-white;
+    text-transform: uppercase;
+    padding: 15px 40px;
+    border-radius: 45px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s;
+
+    svg, img {
+      margin-left: 5px;
+      transition: 0.3s;
+    }
+
+    &:hover {
+      background-color: $color-white;
+      color: $color-black;
+      mix-blend-mode: lighten;
+
+      img {
+        filter: brightness(0%);
+      }
+    }
+  }
+
+  &--small {
+    a {
+      padding: 7px 30px;
+    }
+  }
+}

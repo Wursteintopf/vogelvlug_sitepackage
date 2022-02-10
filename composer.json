@@ -1,0 +1,23 @@
+{
+  "name": "vogelvlug/vogelvlug-sitepackage",
+  "type": "typo3-cms-extension",
+  "description": "",
+  "homepage": "https://vogelvlug.de",
+  "license": ["GPL-3.0-or-later"],
+  "keywords": ["TYPO3 CMS"],
+  "require": {
+    "typo3/cms-core": "^10.4",
+    "typo3/cms-rte-ckeditor": "^10.4",
+    "typo3/cms-fluid-styled-content": "^10.4"
+  },
+  "autoload": {
+    "psr-4": {
+      "Vogelvlug\\VogelvlugSitepackage\\": "Classes/"
+    }
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "vogelvlug_sitepackage"
+    }
+  }
+}
